@@ -26,6 +26,8 @@ class BaseController
     {
         $this->smarty = new Smarty();
         $this->smarty->setTemplateDir(APP_ROOT . '/app/storage/views');
+        $this->smarty->setCacheDir(APP_ROOT . '/app/storage/views');
+        $this->smarty->setCompileDir(APP_ROOT . '/app/storage/views');
 
     }
 
