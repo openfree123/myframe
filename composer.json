@@ -1,0 +1,14 @@
+{
+    "require": {
+        "lox/pheasant": "dev-master",
+        "latte/latte": "^2.4",
+        "altorouter/altorouter": "^1.2",
+        "smarty/smarty": "~3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "vendor\\frame\\": "vendor/frame"
+        }
+    }
+}
