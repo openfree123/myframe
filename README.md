@@ -10,43 +10,9 @@ myframe 基于Composer的轻量级PHP应用框架
  
 
 基本使用
----------------------------------
- 1. composer create-project openfree123/myframe  myframe
- 2. 编辑 Apache下的httpd-vhost.conf文件，添加如下内容：
- 
- **注意以下的目录改成自己对应的本地目录！**
- 
-     ```apache
-     
-    <Directory "D:/demos/my/app/web">
-         Options Indexes FollowSymLinks Includes ExecCGI
-         AllowOverride All
-         Require all granted
-     </Directory>
-    
-     <VirtualHost *:80>
-         ServerAdmin webmaster@my.com
-         DocumentRoot "D:/demos/myframe/app/web"
-         ServerName my.mvc.com
-         ErrorLog "logs/my.mvc.com.com-error.log"
-         CustomLog "logs/my.mvc.com-access.log" common
-     </VirtualHost>
- ```
- 
-3. 启动Apache和MySQL
-4. 在MySQL中创建一个数据库mydb，用户名：myframe， 密码：123456。
-当然了，如果本地已经有能用的数据库，那么可以去修改config/base.php中的配置即可。
 
- **注意：mymvc这个用户需要有全部的数据库操作权限！**
- 
-5. 访问：http://my.mvc.com/home/migrate 执行初始化，生成todo数据表。
-6. 访问：http://my.mvc.com/todo/index  可以执行CRUD的各种操作。
-
- 
-补充
----------------------------------
 1. 系统自带默认路由，一般情况不需要去配置路由，自定义路由请查看config目录下的routes.php的示例。
  配置参考 <http://altorouter.com/usage/mapping-routes.html>
-2. 模版引擎参考 <https://latte.nette.org/>
+2. 模版引擎参考 <https://www.smarty.net//>
 3. ORM的使用参考 <https://github.com/lox/pheasant>
 
