@@ -13,6 +13,6 @@ myframe 基于Composer的轻量级PHP应用框架
 
 1. 系统自带默认路由，一般情况不需要去配置路由，自定义路由请查看config目录下的routes.php的示例。
  配置参考 <http://altorouter.com/usage/mapping-routes.html>
-2. 模版引擎参考 <https://www.smarty.net//>
+2. 模版引擎参考 <https://www.smarty.net>
 3. ORM的使用参考 <https://github.com/lox/pheasant>
 
